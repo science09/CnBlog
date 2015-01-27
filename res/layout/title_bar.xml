@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/top_bar_height"
+    android:background="@drawable/head" >
+
+    <Button
+        android:id="@+id/button_back"
+        style="@style/btn_back_style"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/btn_back_margin_left"
+        android:text="@string/btn_text_back" />
+    
+    <!-- 应用名 -->
+    <TextView
+        android:id="@+id/txtAppTitle"
+        style="@style/txt_app_title_style"
+        android:layout_centerInParent="true" >
+    </TextView>
+    
+    <!-- 评论按钮 -->
+    <Button
+        android:id="@+id/comment_btn"
+        style="@style/btn_comment_style"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/btn_back_margin_left"
+        android:text="@string/btn_text_comment" />
+
+</RelativeLayout>

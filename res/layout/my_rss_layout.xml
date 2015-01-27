@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- RSS地址列表 -->
+        <ListView
+            android:id="@+id/rss_list"
+            style="@style/listview_style" >
+        </ListView>
+        
+         <com.science09.cnblogs.view.EmptyLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+         
+    </FrameLayout>
+
+    <!-- 空数据 -->
+    <TextView
+        android:id="@+id/txtNoData"
+        style="@style/txt_empty_data_style"
+        android:text="还没有订阅" >
+    </TextView>
+
+</LinearLayout>

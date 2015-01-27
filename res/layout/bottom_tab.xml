@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<!--     <LinearLayout
+        android:id="@+id/ll_bottom_tabls_search"
+        style="@style/bottom_tabs_ll" >
+
+        <ImageView
+            android:id="@+id/im_search"
+            style="@style/bottom_tabs_image"
+            android:src="@drawable/icon_1_n" />
+        <TextView
+            style="@style/bottom_tabs_tv"
+            android:text="@string/blog" />       
+    </LinearLayout>
+
+    更多     
+	<LinearLayout   
+	    android:id="@+id/ll_bottom_tabls_more"   
+	    style = "@style/bottom_tabs_ll"  >      
+	    <ImageView  
+	        android:id="@+id/im_more"  
+	        style = "@style/bottom_tabs_image"  
+	        android:src="@drawable/icon_5_n"  />  
+	    <TextView   
+	        style = "@style/bottom_tabs_tv"  
+	        android:text="@string/more"   />             
+	 </LinearLayout>  --> 
+    
+</LinearLayout>

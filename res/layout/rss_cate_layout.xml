@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_blog_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/head" >
+
+        <Button
+            android:id="@+id/rsscate_button_back"
+            style="@style/btn_back_style"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/btn_back_margin_left"
+            android:text="@string/btn_text_back" />
+
+        <TextView
+            android:id="@+id/txtAppTitle"
+            style="@style/txt_app_title_style"
+            android:layout_centerInParent="true"
+            android:text="@string/rss_center_title" >
+        </TextView>
+
+        <FrameLayout style="@style/toolbar_fl_style" >
+            <ImageButton
+                android:id="@+id/btn_add"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/drawable_btn_add_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <!-- RSS地址列表 -->
+        <ListView
+            android:id="@+id/rss_cate_list"
+            style="@style/listview_style" >
+        </ListView>
+	
+        <com.science09.cnblogs.view.EmptyLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+        
+        <!-- 空数据 -->
+        <TextView
+            android:id="@+id/txtNoData"
+            style="@style/txt_empty_data_style"
+            android:text="还没有订阅" >
+        </TextView>
+    </FrameLayout>
+
+</LinearLayout>

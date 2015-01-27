@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <!--
+    <RelativeLayout
+        android:id="@+id/rl_recommend"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@drawable/head" >
+
+        应用名
+        <TextView
+            android:id="@+id/txtAppTitle"
+            style="@style/txt_app_title_style"
+            android:layout_centerInParent="true"
+            android:text="@string/search" >
+        </TextView>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            style="@style/toolbar_fl_style" >
+
+            <ImageButton
+                android:id="@+id/btnItem"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/drawable_btn_list_selector" />
+        </FrameLayout>
+    </RelativeLayout>
+    -->
+
+
+    <!-- 搜索类别 -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:layout_marginTop="10px"
+        android:background="@drawable/bg_search"
+        android:gravity="center_vertical" >
+
+        <!-- 搜索 -->
+        <ImageButton
+            android:id="@+id/search_btn"
+            style="@style/btn_search_style"
+            android:layout_toLeftOf="@dimen/btn_back_margin_left"
+            android:background="@drawable/drawable_btn_search" />
+
+        <EditText
+            android:id="@+id/txtSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_toLeftOf="@id/search_btn"
+            android:background="@null"
+            android:hint="@string/search_tips"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightgray"
+            android:textSize="@dimen/font_size_14" >
+        </EditText>
+    </RelativeLayout>
+    <!-- 显示区 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:dividerHeight="1dp" />
+
+        <com.science09.cnblogs.view.EmptyLayout
+            android:id="@+id/error_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>
